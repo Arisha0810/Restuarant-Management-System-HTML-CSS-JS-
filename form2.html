@@ -1,0 +1,342 @@
+<html>
+	<head>
+		<title>
+		RESERVE TABLE
+		</title>
+	
+		<script>
+		function validate_all()
+		{ 
+		listbox = document.getElementById("listbox1");
+		if(textbox1.value=="" || textbox2.value=="" || textbox3.value=="" || listbox.value == "")
+		alert("Please complete all fields of the form");
+		else
+		window.open("bookingclick.html");
+		}
+		
+		function validate_name()
+		{
+		var letters = /^[A-Za-z\s]+$/;
+		var name=textbox1.value;
+		if(!name.match(letters))
+		alert("Enter Valid Name");
+		}
+
+		function validate_number()
+		{
+		var regex = /^[6-9]\d{9}$/;
+		var number=textbox2.value;
+		if(!number.match(regex))
+		alert("Enter a Valid Phone number");
+		}
+	
+		function validate_membernum()
+		{
+		var regex = /^[1-9]*$/;
+		var number=textbox3.value;
+		if(!number.match(regex))
+		alert("enter a valid member number(maximum member are 9)");
+		else if(number > 10)
+		alert("enter a valid member number(maximum member are 9)");
+		}
+	
+		function validate_date()
+		{
+		var selectedText=document.getElementById("textbox4").value;
+		var selectedDate = new Date(selectedText);
+  		var now = new Date();
+  		if (selectedDate < now) 
+   		alert("Date must be in the future");
+ 		}
+		
+		function validate_radio()
+		{
+		if(document.getElementById("radio3").checked || document.getElementById("radio4").checked || document.getElementById("radio5").checked) {}
+		else 
+		alert("select a session");
+		}
+		
+	</script>
+	</head>
+	
+	<body style="background-image:url('hotel_table.jpg'); background-repeat:repeat; background-size:cover;">
+	
+	<p id="label1">LET US SERVE YOU BETTER</p>
+	<p id="label2">Don't wait in a line to enjoy your meal
+	   Reserve a table with advance with us</p>	
+	<p id="label3">Name </p>			<!--Name label-->
+	<input id="textbox1" type="text" name="textbox1" onblur="validate_name()">   <!--Name Text Field-->
+	<p id="label4">Contact.no </p>			<!--Contact label-->
+	<input id="textbox2" type="text" name="textbox2" onblur="validate_number()">	<!--Contact Text field-->
+	<p id="label5">No of Members </p>		<!--Members label-->
+	<input id="textbox3" type="text" name="textbox3" onblur="validate_membernum()">	<!--Members text field-->
+	<p id="label6" name="anc" >Date(Format : DD-MM-YYYY) </p>			<!--date label-->
+	<input id="textbox4" type="date" name="textbox4" onblur="validate_date()"> 	<!--date textbox-->
+	<p id="label9">Session </p>			<!--Session label-->
+	<input id="radio3" type="radio" name="radio">	<!--radio button for breakfast-->
+	<p id="label10">Breakfast </p>			<!--breakfast label-->
+	<input id="radio4" type="radio" name="radio">	<!--radio button for lunch-->
+	<p id="label11">Lunch </p>			<!--lunch label-->
+	<input id="radio5" type="radio" name="radio">	<!--radio button for dinner-->
+	<p id="label12">Dinner </p>			<!--dinner label-->
+	<p id="label13">Select Time-Slot </p>		<!--time slot label-->
+
+	<select id="listbox1" name="listbox1" size=4 onclick="validate_radio()">	
+	<option value="0">9am - 1pm</option>
+	<option value="1">1pm - 4pm</option>
+	<option value="2">4pm - 7pm</option>
+	<option value="3">7pm - 11pm</option>
+	</select>		
+
+	<p id="label14">Please Specify the Reason for visit </p>		<!--Reason label-->	
+	<input id="submitbutton" type="button" name="submitbutton" value="SUBMIT" onclick="validate_all()">	<!--submit button-->	
+	
+	<textarea id="textarea" "name="textarea" cols="50" rows="5"></textarea>
+	
+	<style>
+	#label1{
+	color:black;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:5%;
+	top:5%;
+		}
+
+	#label2{
+	color:orange;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:600;
+	font-size:26px;
+	text-align:left;
+	left:5%;
+	top:9%;
+		}
+	
+	#label3{
+	color:white;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:5%;
+	top:20%;
+		}
+
+	#textbox1{
+	position:absolute;
+	border-radius:5px;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:15%;
+	top:23%;
+		}
+
+	#label4{
+	color:white;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:5%;
+	top:30%;
+		}
+	
+	#textbox2{
+	position:absolute;
+	border-radius:5px;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:17%;
+	top:33%;
+		}
+
+	#label5{
+	color:white;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:5%;
+	top:40%;
+		}
+	
+	#textbox3{
+	position:absolute;
+	border-radius:5px;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:23%;
+	top:43%;
+		}
+
+	#textbox4{
+	position:absolute;
+	border-radius:5px;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:36%;
+	top:53%;
+		}
+	
+	#label6{
+	color:white;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:5%;
+	top:50%;
+		}
+	
+	#label9{
+	color:white;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:5%;
+	top:60%;
+		}
+	
+	#radio3{
+	color:white;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:15%;
+	top:65%;
+		}
+	
+	#label10{
+	color:black;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:17%;
+	top:60%;
+		}
+	
+	#radio4{
+	color:white;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:29%;
+	top:65%;
+		}
+	
+	#label11{
+	color:black;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:31%;
+	top:60%;
+		}
+
+	#radio5{
+	color:white;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:42%;
+	top:65%;
+		}
+	
+	#label12{
+	color:black;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:44%;
+	top:60%;
+		}
+	
+	#label13{
+	color:white;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:5%;
+	top:70%;
+		}
+
+	#listbox1{
+	position:absolute;
+	border-radius:5px
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:25%;
+	top:70%;
+		}
+	
+	#label14{
+	color:white;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:5%;
+	top:90%;
+		}
+
+	#textarea{
+	position:absolute;
+	font-family:Lucida Fax;
+	left:44%;
+	top:90%;
+		}
+
+	
+	#submitbutton{
+	color:black;
+	background-color:orange;
+	position:absolute;
+	width:200px;
+	height:100px;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:center;
+	left:45%;
+	top:150%;
+	bottom:15%;
+		}
+	
+	</style>
+	</body>
+</html>

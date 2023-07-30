@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>Payment Details</title>
+		<style>
+			body {
+				 background-image: url("payment.jpg");
+				 background-size: cover;
+				 padding: 40px;
+				 font-family: Arial;
+			}
+			.button {
+				  padding: 15px 20px;
+				  font-size: 15px;
+				  text-align: center;
+				  cursor: pointer;
+				  color: #ffffff;
+				  background-color: #FF5733;
+				  border: none;
+				  border-radius: 15px;
+				  box-shadow: 0 11px #999;
+			}
+			.button:hover {
+				background-color: #3e8e41
+			}
+		</style>
+	<script>
+
+	function check() {
+	if(document.getElementById("COD").checked)
+	{
+		window.open("COD.html");
+	}
+	else if(document.getElementById("UPI").checked)
+	{
+		window.open("UPI.html");
+	}
+	else
+	{
+		alert("Please select one option!!");
+	}
+}
+	</script>
+	</head>
+	<body>
+		<form name="form1">
+			<font size = "+3"><p style="color:black"><u>Please Choose a Payment Method:</u></p>
+			<input type="radio" name="payment" id="COD" style="height:30px; width:50px; vertical-align: middle;">Cash on Delivery<br><br>
+			<input type="radio" name="payment" id="UPI" style="height:30px; width:50px; vertical-align: middle;">UPI<br></font><br>
+			<button class="button" onclick="check()">PROCEED</button>
+
+		</form>
+
+	</body>
+</html>

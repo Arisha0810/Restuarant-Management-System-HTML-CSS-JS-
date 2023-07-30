@@ -1,0 +1,361 @@
+<html>
+<head>
+	<title>
+		GLOBAL FUSION
+	</title>
+<style>
+
+.imgb{
+border: 10px solid #A57C00;
+
+}
+
+
+.ss{
+border: 5px solid  #8B4513;
+
+}
+.dropbtn {
+  background-color:#A57C00 ;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+ 
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  //margin: auto;
+
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 38%;
+height: 38%;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Put the next button to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Black background on hover to see button*/
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+#welcometo{
+color:red;
+}
+
+#gfr{
+color:#d0a92c;
+}
+
+
+.dropdown {
+  float: left;
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+  z-index: 1;
+}
+
+#img1{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 18%;
+height: 38%;
+}
+
+.dropdown-content a {
+  color: white;
+  background-color:#A57C00;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+background-color: #8B4513;
+}
+
+.show {
+display: block;
+}
+#special{
+color:#d0a92c;
+}
+
+.gallery {
+  max-width: 1000px;
+  position: relative;
+  //margin: auto;
+
+
+
+display: flex;
+gap:5px;
+margin-left: 15px;
+margin-right: 15px;
+
+
+}
+#gallery{
+
+color:#d0a92c;
+}
+</style>
+</head>
+<body bgcolor="black">
+
+<table width="100%"  border=0% >
+
+<tr>
+
+<td>
+<img  id="img1" src="globalfusion.jpg"></img>
+</td>
+
+<td>
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Menus</button>
+
+<!--Here, insert different forms links-->
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="outlet.html">Outlets</a>
+    <a href="MENU.html">Menu for Online Order</a>
+    <a href="form1.html">Book Our Services</a>
+    <a href="feedback.html">Feedback</a>
+  </div>
+</div>
+
+</td>
+</tr>
+
+</table>
+
+<table border=0 width="100%">
+
+<tr>
+<td>
+<h2 id="welcometo" align="center">Welcome to...</h2>
+</td>
+</tr>
+<tr><td><h1 id="gfr" align="center">Global Fusion Restaurant</h1>
+</td></tr>
+
+</table>
+
+<table>
+<tr>
+<td width=25%></td><td width="50%">
+<h3 align="center" style="color:white;">To provide our guests with a comfortable, quality and satisfying dining experience has always been our priority. 
+Therefore, we are leading at serving your hearts since decades!</h3>
+</td>
+<td>
+</td>
+</tr>
+</table>
+
+<!--our speciality-->
+<h2 id="special" align="center" >Our specialities</h2>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+
+  <img class="ss" src="butterchicken.jpg" style="width:100%;height:150%" ></img>
+
+</div>
+
+<div class="mySlides fade">
+  <img class="ss" src="biryani.webp" style="width:100%;height:150%">
+</div>
+
+<div class="mySlides fade">
+  <img class="ss" src="tandoorichicken.jpg" style="width:100%;height:150%">
+</div>
+
+<div class="mySlides fade">
+  <img class="ss" src="chillichicken.jpg" style="width:100%;height:150%">
+</div>
+
+<div class="mySlides fade">
+  <img class="ss" src="hakkanoodles.jpg" style="width:100%;height:150%">
+</div>
+
+<div class="mySlides fade">
+  <img class="ss" src="prawnrice.jpg" style="width:100%;height:150%">
+</div>
+
+<div class="mySlides fade">
+  <img class="ss" src="refreshments.jpg" style="width:100%;height:150%">
+</div>
+
+<!--Hex code for <> &#10094 &#10095-->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+
+
+<!--Gallery section-->
+<br><br><br><br><br><br>
+<h2 id="gallery" align="center" >Our Gallery and Ambience</h2>
+<div class="gallery">
+
+
+
+<div>
+  <img class="imgb" src="gfrbb.jpeg" style="width:450px;height:150%"><p></div>
+   
+<div>
+    <img class="imgb" src="gfra1.jpg"  style="width:450px;height:150%"><p></div>
+
+     <div>
+    <img class="imgb" src="gfra2.jpg"  style="width:450px;height:150%"><p></div>
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+<div class="gallery">
+<div>
+    <img class="imgb" src="gfra3.webp"  style="width:450px;height:150%"><p></div>
+
+   <div>
+  <img class="imgb" src="gfra4.jpeg"  style="width:450px;height:150%"><p></div>
+
+<div>
+  <img class="imgb" src="gfra5.jpg"  style="width:450px;height:150%"><p></div>
+
+</div>
+<br><br><br><p>
+
+
+<script>
+//When the button is clicked, show or hide the dropdown content 
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close dropdown list if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+//Slideshow Script
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+</body>
+</html>

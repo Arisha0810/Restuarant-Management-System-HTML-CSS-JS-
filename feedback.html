@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shotcut icon" href="i.png" type="image/png">
+        <link rel="stylesheet" type="text/css" href="feedstyle.css">
+        <title>Feedback</title>
+
+
+    </head>
+<body>
+    <div id="mydiv">
+        <label id="first"><b>Feedback Form</b></label><br>
+<label id="second">Please provide your feedback below:</label>
+<label id="third"><b>How do you rate your overall experience?</b></label>
+<input type="radio" name="myradio" id="bad"><label id="b" onmouseover="Selection(this)">&nbsp;Bad</label>
+<input type="radio" name="myradio" id="average">
+<label id="a" onmouseover="Selection(this)">&nbsp;&nbsp;Average</label>
+<input type="radio" name="myradio" id="good">
+<label id="g" onmouseover="Selection(this)">&nbsp;&nbsp;Good</label>
+<label id="comment"><b>Enter your Comment:</b></label>
+<textarea id="com" rows="8" cols="55" placeholder="Your Comments" maxlength="70"></textarea>
+<label id="yn"><b>Enter Your Name:</b></label>
+<input type="text" id="na" placeholder="Mustafa"><input type="text" id="me" placeholder="Mustafa251287@gmail.com">
+<label id="em"><b>Enter your Email Id:</b></label>
+<input type="button" value="Submit Your Feedback" id="button" onclick="submiting()"/>
+    </div>
+<script src="feedback.js">
+
+
+</script>
+
+</body>
+</html>

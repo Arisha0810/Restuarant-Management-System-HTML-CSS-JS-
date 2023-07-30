@@ -1,0 +1,470 @@
+<html>
+	<head>
+		<title>
+		CATER SERVICES
+		</title>
+	
+		<script>
+		function validate_all()
+		{ 
+		listbox1 = document.getElementById("listbox1");
+		listbox2 = document.getElementById("listbox2");
+		listbox3 = document.getElementById("listbox3");
+		listbox4 = document.getElementById("listbox4");
+		listbox5 = document.getElementById("listbox5");
+		listbox6 = document.getElementById("listbox6");
+		listbox7 = document.getElementById("listbox1");
+		if(textbox1.value=="" || textbox2.value=="" || textbox3.value=="" || listbox1.value == "" || listbox2.value == "" || listbox3.value == "" || listbox4.value == "" || listbox5.value == "" || listbox6.value == "" || listbox7.value == "")
+		alert("Please complete all fields of the form");
+		else
+		window.open("caterclick.html");
+		}
+
+		function validate_name()
+		{
+		var letters = /^[A-Za-z\s]+$/;
+		var name=textbox1.value;
+		if(!name.match(letters))
+		alert("Enter Valid Name");
+		}
+
+		function validate_number()
+		{
+		var regex = /^[6-9]\d{9}$/;
+		var number=textbox2.value;
+		if(!number.match(regex))
+		alert("Enter a Valid Phone number");
+		}
+
+		function validate_date()
+		{
+		var selectedText=document.getElementById("textbox3").value;
+		var selectedDate = new Date(selectedText);
+  		var now = new Date();
+  		if (selectedDate < now) 
+   		alert("Date must be in the future");
+		}
+
+		function validate_radio()
+		{
+		if(document.getElementById("radio1").checked || document.getElementById("radio2").checked) {}
+		else 
+		alert("Select between yes or no in the previous question");
+		}
+		</script>
+	</head>
+	
+	<body style="background-image:url('food.jpg'); background-repeat:repeat; background-size:cover;">
+		
+	<p id="label3">Name </p>			<!--Name label-->
+	<input id="textbox1" "type="text" name="textbox1" onblur="validate_name()">   <!--Name Text Field-->
+	<p id="label4">Contact.no </p>			<!--Contact label-->
+	<input id="textbox2" "type="text" name="textbox2" onblur="validate_number()">	<!--Contact Text field-->
+	<p id="label5">Select Members Range </p>		<!--Members label-->
+	<p id="label6">Date(Format:DD-MM-YYYY) </p>				<!--date label-->	
+	<input id="textbox3" type="date" name="textbox3" onblur="validate_date()">	<!--Date Text field-->
+	<p id="label7">Select Time-Slot </p>		<!--time slot label-->
+	<p id="label8">Plz Specify the Reason for the the event </p>		<!--time slot label-->
+	<p id="label9">Would you like us to organize cake for the event </p>		<!--cake label-->
+	<p id="label12">Starter </p>						<!--starter label-->
+	<p id="label13">Fast-Foods </p>						<!--fast-foods-->
+	<p id="label14">Main-Course </p>					<!--main-course-->
+	<p id="label15">Dessert </p>						<!--dessert-->
+	<p id="label16">Select the below foods for the event </p>		<!--food label-->
+	<input id="bookbutton" type="button" name="bookbutton" value="BOOK" onclick="validate_all()">  	<!--button-->
+
+	<select id="listbox1" name="listbox1" size=1>	<!--Member listbox-->
+	<option value="0">10 - 30</option>
+	<option value="1">30 - 70</option>
+	<option value="2">70 - 100</option>
+	<option value="3">More than 100</option>
+	</select>	
+
+	<select id="listbox2" name="listbox2" size=1>	<!--Time slot listbox-->
+	<option value="0">9am - 1pm</option>
+	<option value="1">pm - 4pm</option>
+	<option value="2">4pm - 7pm</option>
+	<option value="3">7pm - 11pm</option>
+	</select>
+
+	<select id="listbox3" name="listbox2" size=4>	<!--event listbox-->
+	<option value="0">Birthday</option>
+	<option value="1">Anniversary</option>
+	<option value="2">Ceremony</option>
+	<option value="3">Festival</option>
+	<option value="4">Other Special Occasion</option>
+	</select>
+	
+	<select id="listbox4" name="listbox4" size=4 Multiple onclick="validate_radio()">	<!--starter listbox-->
+	<option value="0">Vegetable Clear Soup</option>
+	<option value="1">Vegetable Burnt Garlic Soup</option>
+	<option value="2">Vegetable Manchow Soup</option>
+	<option value="3">Vegetable Hot and Sour Soup</option>
+	<option value="4">Vegetable Sweet Corn Soup</option>
+	<option value="5">Crispy Thread Paneer</option>
+	<option value="6">Paneer Chilli Dry</option>
+	<option value="7">Cream Corn</option>
+	<option value="8">Crispy Corn</option>
+	<option value="9">Veg Manchurian Dry</option>
+	</select>
+
+	<select id="listbox5" name="listbox5" size=4 Multiple>	<!--fastfood listbox-->
+	<option value="0">Veg Hakka Noodles</option>
+	<option value="1">Chicken Hakka Noodles</option>
+	<option value="2">Veg Schezwan Noodles</option>
+	<option value="3">Chicken Schezwan Noodles</option>
+	<option value="4">Veg Manchurian Noodles</option>
+	<option value="5">Veg Stwed Noodles</option>
+	<option value="6">Margherita Pizza</option>
+	<option value="7">Cheese N Corn</option>
+	<option value="8">Farm House Pizza</option>
+	<option value="9">Peppy Paneer Pizza</option>
+	<option value="10">McALoo Tikki Burger</option>
+	<option value="11">Chicken Burger</option>
+	<option value="12">Zinger Burger</option>
+	<option value="13">Paneer Burger</option>
+	<option value="14">Mexican Burger</option>
+	</select>
+
+	<select id="listbox6" name="listbox6" size=4 Multiple>	<!--MainCourse listbox-->
+	<option value="0">Veg Fried Rice</option>
+	<option value="1">Chicken Fried Rice</option>
+	<option value="2">Veg Schezwan Fried</option>
+	<option value="3">Chicken Schezwan</option>
+	<option value="4">Veg Triple Schezwan</option>
+	<option value="5">Chicken Schezwan Fried Rice</option>
+	<option value="6">Vegetable Spring Roll</option>
+	<option value="7">French Fries</option>
+	<option value="8">Mexican Nachos</option>
+	<option value="9">Chicken Popcorn</option>
+	<option value="10">Veg paneer wrap</option>
+	</select>
+
+	<select id="listbox7" name="listbox7" size=4 Multiple>	<!--MainCourse listbox-->
+	<option value="0">Strawberry juice</option>
+	<option value="1">Mango juice</option>
+	<option value="2">Mojito</option>
+	<option value="3">Orange Mojito</option>
+	<option value="4">Cappuccino</option>
+	<option value="5">Coffee</option>
+	<option value="6">Chocolate Mouse</option>
+	<option value="7">Caramel Custard</option>
+	<option value="8">Walnut Brownie</option>
+	<option value="9">Cheesecake</option>
+	<option value="10">Fruit Salad Cream</option>
+	<option value="11">Matka Rabdi</option>
+	</select>
+	
+	<input id="radio1" type="radio" name="radio1">	<!--radio button for yes-->
+	<p id="label10">YES </p>			<!--yes label-->
+	<input id="radio2" type="radio" name="radio1">	<!--radio button for no-->
+	<p id="label11">NO </p>			<!--no label-->
+	
+	</body>
+
+	<style>
+	#label3{
+	color:white;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:5%;
+	top:20%;
+		}
+
+	#textbox1{
+	position:absolute;
+	border-radius:5px;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:12%;
+	top:23%;
+		}
+
+	#label4{
+	color:white;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:5%;
+	top:30%;
+		}
+	
+	#textbox2{
+	position:absolute;
+	border-radius:5px;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:17%;
+	top:33%;
+		}
+
+	#label5{
+	color:white;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:5%;
+	top:40%;
+		}
+	
+	#listbox1{
+	position:absolute;
+	border-radius:5px;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:30%;
+	top:43%;
+		}
+	
+	#label6{
+	color:white;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:5%;
+	top:52%;
+		}
+	
+	
+	#textbox3{
+	position:absolute;
+	border-radius:5px;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:35%;
+	top:55%;
+		}
+
+	#label7{
+	color:white;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:5%;
+	top:65%;
+		}
+	
+	#listbox2{
+	position:absolute;
+	border-radius:5px;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:25%;
+	top:68%;
+		}
+
+	#label8{
+	color:white;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:5%;
+	top:80%;
+		}
+
+	#listbox3{
+	position:absolute;
+	border-radius:5px;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:50%;
+	top:85%;
+		}
+
+	
+	#label9{
+	color:white;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:5%;
+	top:105%;
+		}
+
+	#radio1{
+	color:black;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:60%;
+	top:110%;
+		}
+	
+	#label10{
+	color:white;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:62%;
+	top:105%;
+		}
+	
+	#radio2{
+	color:white;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:80%;
+	top:110%;
+		}
+	
+	#label11{
+	color:white;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:82%;
+	top:105%;
+		}
+
+	#label12{
+	color:white;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:15%;
+	top:125%;
+		}
+
+	#label13{
+	color:white;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:45%;
+	top:125%;
+		}
+
+	#label14{
+	color:white;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:75%;
+	top:125%;
+		}
+
+	#label15{
+	color:white;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:45%;
+	top:155%;
+		}
+
+	#listbox4{
+	color:black;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:5%;
+	top:135%;
+		}
+
+	#listbox5{
+	color:black;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:37%;
+	top:135%;
+		}
+
+	#listbox6{
+	color:black;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:68%;
+	top:135%;
+		}
+
+	#listbox7{
+	color:black;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:40%;
+	top:165%;
+		}
+	
+	#label16{
+	color:white;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:left;
+	left:5%;
+	top:115%;
+		}
+
+	#bookbutton{
+	color:black;
+	background-color:orange;
+	position:absolute;
+	width:200px;
+	height:80px;
+	font-family:Lucida Fax;
+	font-weight:800;
+	font-size:26px;
+	text-align:center;
+	left:40%;
+	top:200%;
+		}
+	
+
+	</style>
+</html>

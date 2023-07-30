@@ -1,0 +1,108 @@
+<html>
+	<head>
+		<style>
+			* {
+				  box-sizing: border-box;
+			    }
+		
+			body {
+				 background-image: url("BG.jpg");
+				background-size: cover;
+				  background-color: #f1f1f1;
+				  padding: 20px;
+				  font-family: Arial;
+			}
+
+			.row {
+				  margin: 8px -16px;
+			}
+
+			/* Create four equal columns that floats next to each other */
+			.column {
+				  float: left;
+				  width: 15%;
+			}
+
+			/* Content */
+			.content {
+				  background-color: white;
+				  padding: 10px;
+			}
+			.button {
+				  padding: 15px 20px;
+				  font-size: 14px;
+				  text-align: center;
+				  cursor: pointer;
+				  color: #ffffff;
+				  background-color: #FF5733;
+				  border: none;
+				  border-radius: 15px;
+				  box-shadow: 0 9px #999;
+			}
+			.button:hover {
+				background-color: #3e8e41
+			}
+			mark { 
+				  background-color: white;
+				  color: black;
+			}			
+		</style>
+	</head>
+	<script>
+		function myButton_onclick()
+		{
+			window.open("ORDER.html");
+		}
+	</script>
+	<body>
+	
+	<div class="main">
+	         <font size = "+4"><b><mark>**SNACKS**</mark></b></font><br><br>
+		<div class="row">
+			  <div class="column">
+				    <div class="content">
+					      <img src="Vegetable Spring Roll.jpg" style="width:100%">
+					      <h3>Vegetable Spring Roll</h3>
+					      <p>Spring rolls are a large variety of filled, rolled appetizers found in East Asian, Southeast Asian cuisine. The kind of wrapper, fillings, and cooking technique.</p><h2>₹120                            
+					 <button class="button" onclick="myButton_onclick()">ORDER</button>      
+				    </div>
+			 </div>
+
+			<div class="column">
+				 <div class="content">
+					 <img src="frenchfries.jpg" style="width:100%">
+					<h3>French Fries</h3>
+					<p>Classic Crinkle Cut fries lightly salted and served with ketchup. It is made with fresh potaoes and potato fingers are deep fried in oil until golden brown and crispy.</p><h2>₹80
+					<button class="button" onclick="myButton_onclick()">ORDER</button>      
+				</div>
+			 </div>
+
+			<div class="column">
+				<div class="content">
+					<img src="mexican nachos.jpg" alt="Nature" style="width:100%">
+					<h3>Mexican Nachos</h3>
+					<p>Nachos are a Mexican regional dish that consists of heated tortilla chips or totopos covered with melted cheese, often served as a snack. It is loaded with veggies</p><h2>₹160
+					<button class="button" onclick="myButton_onclick()">ORDER</button>      
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="content">
+					<img src="Chicken Popcorn.jpg" alt="Mountains" style="width:100%">
+					<h3>Chicken Popcorn</h3>
+					<p>Chicken Popcorn is marinated for a tender inside and breaded for a flavorful, fun crunch on the outside. The Pieces of chicken to male popcorn are taken from chicken breast.</p><h2>₹180
+					<button class="button" onclick="myButton_onclick()">ORDER</button>      
+				</div>
+			</div>
+			 <div class="column">
+				    <div class="content">
+					      <img src="wrap.jpg" style="width:100%">
+					      <h3>Veg Paneer Wrap</h3>
+					      <p>A wrap is a food dish made with a soft flatbread rolled around a filling. The filling may include shreds of lettuce, diced tomato, grilled onions, cheese, a sauce and paneer.</p><h2>₹150
+					      <button class="button" onclick="myButton_onclick()">ORDER</button>      
+				    </div>
+			 </div>
+		</div>
+	</div>
+</body>
+</html>

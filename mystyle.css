@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Tangerine:wght@700&display=swap');
+
+body {
+background-image: url("fi.gif");
+background-repeat: no-repeat;
+background-size: 100vw 100vh;
+}
+
+.mydiv {
+
+position:absolute;
+top:15vh;
+left:3vw;
+height:59vh;
+width:40vw;
+background-image:url('rock.jpg');
+background-size: cover;
+position:absolute;
+  
+}
+
+.mydiv:hover{
+    animation: animate 5s linear infinite;
+    
+
+}
+@keyframes animate {
+    0%{
+       transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+.awe{
+    position:absolute;
+}
+#para {
+    color:rgb(42, 243, 119);
+    font-size: 45px;
+font-style:italic;
+position:absolute;
+font-family: 'Tangerine', cursive;
+left:4vw;
+top:-1vh;
+}
+#sign {
+font-size:25px;
+color:rgb(122, 245, 245);
+font-style: italic;
+top:6vh;
+left:15vw;
+font-family: 'Dancing script',cursive;
+position: absolute;
+}
+#l1 {
+color:rgb(127, 238, 141);
+position:absolute;
+top:15vh;
+left:3vw;
+font-style:italic;
+font-size: 23px;
+
+
+}
+
+#li:hover{
+    
+
+}
+#pass{
+    color:rgb(9, 216, 147);
+position:absolute;
+top:23vh;
+left:1vw;
+font-style:italic;
+font-size: 23px;
+
+}
+#confirmpass{
+    color:rgb(185, 235, 92);
+position:absolute;
+top:31vh;
+font-style:italic;
+font-size: 23px;  
+}
+#t1{
+    top:15vh;
+    left:15vw;
+    position:absolute;
+    height:25px;
+    width:173px;
+    font-size: 16px;
+    font-style:italic;
+    font-family: Arial;
+    color: aquamarine;
+    border: none;
+    background-color: transparent;
+}
+#enterpass {
+    top:23vh;
+    left:15vw;
+    position:absolute;
+    height:25px;
+    font-size: 16px;
+    font-style:italic;
+    font-family: 'Times New Roman', Times, serif;
+    color: aquamarine;
+    border: none;
+    background-color:transparent;
+    width:180px;
+}
+#conpass{
+    top:31vh;
+    left:15vw;
+    position:absolute;
+    height:25px;
+    font-size: 16px;
+    font-style:italic;
+    font-family: 'Times New Roman', Times, serif;
+    color: aquamarine;
+    border: none;
+    background-color:transparent;
+    width:180px; 
+}
+#conpass:hover{
+background-color: rgba(149, 230, 84, 0.836);
+}
+#conpass:focus{
+    color:cadetblue
+}
+#enterpass:hover{
+background-color: aquamarine;
+}
+#enterpass:focus{
+color: chartreuse;
+}
+#t1:hover{
+background-color: rgb(180, 219, 219);
+}
+#t1:focus{
+    color:cornflowerblue;
+}
+
+#submit{
+position:absolute;
+background-color:transparent;
+height:45px;
+width:85px;
+color:aquamarine;
+font-style:italic;
+font-family:'Tangerine', cursive;
+font-size: 28px;
+top:37vh;
+left:12vw;
+height:fit-content;
+width:95px;
+
+}
+
+#c{
+position: absolute;
+top:27vh;
+left:14vw;
+}
+#sh{
+position: absolute;
+top:27vh;
+left:15vw;
+color:rgb(104, 235, 122);
+font-family: 'Dancing script',cursive;
+font-size: 17px;
+}
+
+#checkmail{
+    position: absolute;
+top:15vh;
+left:28vw;
+font-style:bold;
+font-size: 18px; 
+height:30px;
+width:120px;
+text-align: center; 
+}
+#checkpass{
+    position: absolute;
+top:23vh;
+left:28vw;
+text-align: center;
+height:30px;
+width:85px;
+font-style: bold;
+font-size: 18px;  
+} 

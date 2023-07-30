@@ -1,0 +1,120 @@
+<html>
+	<head>
+		<style>
+			* {
+				  box-sizing: border-box;
+			    }
+		
+			body {
+				 background-image: url("BG.jpg");
+				background-size: cover;
+				  background-color: #f1f1f1;
+				  padding: 20px;
+				  font-family: Arial;
+			}
+
+			.row {
+				  margin: 8px -16px;
+			}
+
+			/* Create four equal columns that floats next to each other */
+			.column {
+				  float: left;
+				  width: 15%;
+			}
+
+			/* Content */
+			.content {
+				  background-color: white;
+				  padding: 10px;
+			}
+			.button {
+				  padding: 15px 20px;
+				  font-size: 14px;
+				  text-align: center;
+				  cursor: pointer;
+				  color: #ffffff;
+				  background-color: #FF5733;
+				  border: none;
+				  border-radius: 15px;
+				  box-shadow: 0 9px #999;
+			}
+			.button:hover {
+				background-color: #3e8e41
+			}
+			mark { 
+				  background-color: white;
+				  color: black;
+			}			
+		</style>
+	</head>
+	<script>
+		function myButton_onclick()
+		{
+			window.open("ORDER.html");
+		}
+	</script>
+	<body>
+	
+	<div class="main">
+	         <font size = "+4"><b><mark>**DESSERTS**</mark></b></font><br><br>
+		<div class="row">
+			  <div class="column">
+				    <div class="content">
+					      <img src="mousse.jpg" style="width:100%">
+					      <h3>Chocolate Mousse</h3>
+					      <p>Creamy chocolate mousse layered with moist chocolate cake.</p><h2>₹90                          
+					 <button class="button" onclick="myButton_onclick()">ORDER</button>      
+				    </div>
+			 </div>
+
+			<div class="column">
+				 <div class="content">
+					 <img src="caramel.jpg" style="width:100%">
+					<h3>Caramel Custard</h3>
+					<p>Heavenly delightful pudding made with milk and vanilla cream.</p><h2>₹60
+					<button class="button" onclick="myButton_onclick()">ORDER</button>      
+
+				</div>
+			 </div>
+
+			<div class="column">
+				<div class="content">
+					<img src="Brownie.jpg" alt="Nature" style="width:100%">
+					<h3>Walnut Brownie</h3>
+					<p>Heavly loaded with dark chocolate and walnut.</p><h2>₹80
+					<button class="button" onclick="myButton_onclick()">ORDER</button>      
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="content">
+					<img src="Cheese Cake.jpg" alt="Mountains" style="width:100%">
+					<h3>Cheesecake</h3>
+					<p>Baked cheese cake with cracker base and cream cheese.</p><h2>₹180
+					<button class="button" onclick="myButton_onclick()">ORDER</button>      
+
+				</div>
+			</div>
+			 <div class="column">
+				    <div class="content">
+					      <img src="Fruit Salad Cream.jpg" style="width:100%">
+					      <h3>Fruit Salad Cream</h3>
+					      <p>Fruit salad that has fruits evenly cut into pieces & mix in cream.</p><h2>₹120
+					      <button class="button" onclick="myButton_onclick()">ORDER</button>      
+
+				    </div>
+			 </div>
+			 <div class="column">
+				    <div class="content">
+					      <img src="Rabdi.jpg" style="width:100%">
+					      <h3>Matki Rabdi</h3>
+					      <p>A delight for the sweet toothed the rabdi served in matki.</p><h2>₹135
+					      <button class="button" onclick="myButton_onclick()">ORDER</button>      
+
+				    </div>
+			 </div>
+		</div>
+	</div>
+</body>
+</html>

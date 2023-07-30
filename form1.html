@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<title>
+			food_ordering
+		</title>
+
+		<script>
+		function open_booking()
+		{window.open("form2.html");}
+
+		function open_cater()
+		{window.open("form3.html");}
+		</script>
+	</head>
+
+	<body style="background-image:url('food.jpg'); background-repeat:no-repeat;">
+	
+	<p id="label1">Would You Like To</p>
+	<input type="button" id="firstpageb1" name="button1" value="RESERVE TABLE" onclick="open_booking()">
+	<input type="button" id="firstpageb2" name="button2" value="BOOK FOR CATER" onclick="open_cater()">
+	<p id="label2">OR</p>
+
+	<style>
+	#firstpageb1{
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:700;
+	border-radius:5px;
+	background-color:red;
+	font-size:24px;
+	width:500px;
+	height:100px;	
+	left:32%;
+	top:30%;
+		}
+
+	#firstpageb2{
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:700;
+	border-radius:5px;
+	background-color:red;
+	font-size:24px;
+	width:500px;
+	height:100px;	
+	left:32%;
+	top:57%;
+		}
+
+	#label1{
+	color:white;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:700;
+	font-size:26px;
+	text-align:center;
+	width:500px;
+	height:100px;	
+	left:32%;
+	top:16%;
+		}
+
+	#label2{
+	color:white;
+	position:absolute;
+	font-family:Lucida Fax;
+	font-weight:700;
+	font-size:26px;
+	text-align:center;
+	width:500px;
+	height:100px;	
+	left:32%;
+	top:45%;
+		}
+	</style>
+	</body>
+</html>

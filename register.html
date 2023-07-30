@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shotcut icon" href="i.png" type="image/png">
+<link rel="stylesheet" href="mystyle.css">
+<title>
+    Registeration Form
+</title>
+
+</head>
+<body>
+    
+<div class="mydiv" id="first">
+    
+    <h1 id="para">Welcome to our Registeration Form</h1>
+<p id="sign">Sign in here</p>
+<label id="l1">Enter your Email:</label>
+<input type="text" id="t1" onkeyup="checkemail()">
+<label id="pass">Enter your password:</label>
+<input id="enterpass" type="password" onkeyup="checkpassword()"></input>
+<input id="c" type="checkbox" onchange="showpass()"/>
+<label id="confirmpass">Retype Your password:</label>
+<input type="password" id="conpass"/>
+<input type="button" id="submit" value="Submit" onclick="senddatatoserver()"/>
+<label id="sh" onmouseover="showpass1(true)" onmouseout="showpass1(false)">&nbsp;Show Password</label>
+
+
+<label id="checkmail"></label>
+<label id="checkpass"></label>
+</div>
+<script src="validation.js"></script>
+<script src="changebackground.js"></script>
+</body>
+
+</html>

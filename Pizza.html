@@ -1,0 +1,111 @@
+<html>
+	<head>
+		<style>
+			* {
+				  box-sizing: border-box;
+			    }
+		
+			body {
+				 background-image: url("BG.jpg");
+				background-size: cover;
+				  background-color: #f1f1f1;
+				  padding: 20px;
+				  font-family: Arial;
+			}
+
+			.row {
+				  margin: 8px -16px;
+			}
+
+			/* Create four equal columns that floats next to each other */
+			.column {
+				  float: left;
+				  width: 15%;
+			}
+
+			/* Content */
+			.content {
+				  background-color: white;
+				  padding: 10px;
+			}
+			.button {
+				  padding: 15px 20px;
+				  font-size: 14px;
+				  text-align: center;
+				  cursor: pointer;
+				  color: #ffffff;
+				  background-color: #FF5733;
+				  border: none;
+				  border-radius: 15px;
+				  box-shadow: 0 9px #999;
+			}
+			.button:hover {
+				background-color: #3e8e41
+			}
+			mark { 
+				  background-color: white;
+				  color: black;
+			}			
+		</style>
+	</head>
+	<script>
+		function myButton_onclick()
+		{
+			window.open("ORDER.html");
+		}
+	</script>
+	<body>
+	
+	<div class="main">
+	         <font size = "+4"><b><mark>**PIZZA**</mark></b></font><br><br>
+		<div class="row">
+			  <div class="column">
+				    <div class="content">
+					      <img src="Margherita Pizza.jpg" style="width:100%">
+					      <h3>Margherita Pizza</h3>
+					      <p>Pizza Margherita is a typical Neapolitan pizza, made with San Marzano tomatoes, mozzarella cheese, fresh basil, salt, and extra-virgin olive oil.</p><h2>₹150                            
+					 <button class="button" onclick="myButton_onclick()">ORDER</button>      
+				    </div>
+			 </div>
+
+			<div class="column">
+				 <div class="content">
+					 <img src="Cheese n Corn Pizza.jpg" style="width:100%">
+					<h3>Cheese N Corn Pizza</h3>
+					<p>Sweet and juicy American golden corn & real mozzarella cheese on a cheesy base is a very sweet delectable combination.</p><h2>₹200
+					<button class="button" onclick="myButton_onclick()">ORDER</button>      
+
+				</div>
+			 </div>
+
+			<div class="column">
+				<div class="content">
+					<img src="FarmHousePizza.jpg" alt="Nature" style="width:100%">
+					<h3>Farm House Pizza</h3>
+					<p>Farm house Pizza is filled with exotic vegetables like Red, Yellow, Green Capsicum, Olive, Jalapeno and  and topped with cheese.</p><h2>₹320
+					<button class="button" onclick="myButton_onclick()">ORDER</button>      
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="content">
+					<img src="Pappy Paneer Pizza.jpg" alt="Mountains" style="width:100%">
+					<h3>Pappy Paneer Pizza</h3>
+					<p>Pappy Paneer Pizza is loaded with Chunky Paneer, Spicy Red Pepper and Crispy Capsicum. The panner used is Fresh and soft.</p><h2>₹300
+					<button class="button" onclick="myButton_onclick()">ORDER</button>      
+
+				</div>
+			</div>
+			 <div class="column">
+				    <div class="content">
+					      <img src="Extravaganza Pizza.jpg" style="width:100%">
+					      <h3>Extra Vaganza Pizza</h3>
+					      <p>Extra Vaganza Pizza is loaded with Black Olives, Capsicum, mashroom, corn, onion, tomato and extra Cheese.</p><h2>₹350
+					      <button class="button" onclick="myButton_onclick()">ORDER</button>      
+
+				    </div>
+			 </div>
+		</div>
+	</div>
+</body>
+</html>

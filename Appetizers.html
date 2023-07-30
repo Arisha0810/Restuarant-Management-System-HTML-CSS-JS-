@@ -1,0 +1,132 @@
+<html>
+
+<head>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			background-image: url("BG.jpg");
+			background-size: cover;
+			background-color: #f1f1f1;
+			padding: 20px;
+			font-family: Arial;
+		}
+
+		.row {
+			margin: 8px -16px;
+		}
+
+		/* Create four equal columns that floats next to each other */
+		.column {
+			float: left;
+			width: 15%;
+		}
+
+		/* Content */
+		.content {
+			background-color: white;
+			text-align: center;
+			padding: 10px;
+		}
+		.content:hover {
+  -ms-transform: scale(1.5); 
+  -webkit-transform: scale(1.5); 
+  transform: scale(1.5); 
+}
+		.button {
+			padding: 15px 20px;
+			font-size: 14px;
+			text-align: center;
+			cursor: pointer;
+			color: #ffffff;
+			background-color: #FF5733;
+			border: none;
+			border-radius: 15px;
+			box-shadow: 0 9px #999;
+		}
+
+		.button:hover {
+			background-color: #3e8e41
+		}
+
+		mark {
+			background-color: white;
+			color: black;
+		}
+	</style>
+</head>
+<script>
+	function myButton_onclick() {
+		window.open("ORDER.html");
+	}
+</script>
+
+<body>
+
+	<div class="main">
+		<font size="+4"><b><mark>**APPETIZERS**</mark></b></font><br><br>
+		<div class="row">
+			<div class="column">
+				<div class="content">
+					<img src="CrispyThreadPaneer.jpg" style="width:100%">
+					<h3>Crispy Thread Paneer</h3>
+					<p>The Paneer is fried in such a way that the skin is extremely crunchy. Cooked with shezwan sauce
+						and bell peppers.</p>
+					<h2>₹220
+						<button class="button" onclick="myButton_onclick()">ORDER</button>
+
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="content">
+					<img src="Paneer Chilli Dry.jpg" style="width:100%">
+					<h3>Paneer Chilli Dry</h3>
+					<p>Chilli Paneer is a popular restaurant style Indo Chinese starter. A spicy, tangy paneer can
+						served along with a bowl of rice.This recipe yields one of the best chilli paneer dry.</p>
+					<h2>₹220
+						<button class="button" onclick="myButton_onclick()">ORDER</button>
+
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="content">
+					<img src="Cream Corn.jpg" alt="Nature" style="width:100%">
+					<h3>Cream Corn</h3>
+					<p>Cream Corn is a type of vegetable dish made by combining pieces of whole sweetcorn with a soupy
+						liquid of milky residue from pulped corn kernels scraped from the cob.</p>
+					<h2>₹120
+						<button class="button" onclick="myButton_onclick()">ORDER</button>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="content">
+					<img src="Crispy Potato.jpg" alt="Mountains" style="width:100%">
+					<h3>Crispy Potato</h3>
+					<p>Crispy Potato wedges are soft pillows on the inside, crunchy on the outside with a good kick of
+						garlic and parmesan cheese, and no pre-soaking or parboiling needed.</p>
+					<h2>₹140
+						<button class="button" onclick="myButton_onclick()">ORDER</button>
+
+				</div>
+			</div>
+			<div class="column">
+				<div class="content">
+					<img src="Veg Manchurian Dry.jpg" style="width:100%">
+					<h3>Veg Manchurian Dry</h3>
+					<p>Veg Manchurian is a tasty Indo Chinese dish.Veg manchurian gravy recipe has a sauce or gravy in
+						which the fried veggies balls are tossed and dunked.</p>
+					<h2>₹150
+						<button class="button" onclick="myButton_onclick()">ORDER</button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

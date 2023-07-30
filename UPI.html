@@ -1,0 +1,90 @@
+<html>
+	<head>
+	            <title>UPI</title>
+		<style>
+			body {
+				 background-image: url("UPI.jpg");
+				 background-size: cover;
+				 padding: 35px;
+				 font-family: Arial;
+			}
+
+			.button {
+				  padding: 15px 20px;
+				  font-size: 15px;
+				  text-align: center;
+				  cursor: pointer;
+				  color: #ffffff;
+				  background-color: #FF5733;
+				  border: none;
+				  border-radius: 15px;
+				  box-shadow: 0 9px #999;
+			}
+
+			.button:hover {
+				background-color: #3e8e41
+			}
+			mark { 
+				  background-color: black;
+				  color: white;
+			}
+		</style>
+	<script>
+			function upi_onblur()
+			{	
+				var upi = document.form1.upi.value;
+				var a = /^[0-9]{6}$/;
+				if(a.test(upi)==false) 
+				{ 
+					alert("Please enter a valid UPI ID");
+					upi.focus();
+				} 
+			}
+			function pw_onblur()
+			{	
+				var pw = document.form1.pw.value;
+				var b = /^[0-9]{6}$/;
+				if(b.test(pw)==false) 
+				{ 
+					alert("Please enter a valid Password");
+					pw.focus();
+				} 
+			}
+			function otp_onclick()
+			{
+				var myForm = document.form1;
+				if(myForm.upi.value == "" || myForm.pw.value == "")
+				{
+					alert("Please complete all the form");
+				} 
+				else
+				{
+					alert("OTP has been send on your registered mobile number");
+				}
+			}
+			function OTP_onblur()
+			{	
+				var OTP = document.form1.OTP.value;
+				var c = /^[0-9]{6}$/;
+				if(c.test(OTP)==false) 
+				{ 
+					alert("Please enter a valid OTP");
+				} 
+				else
+				{
+					window.open("completed.html");	
+				}
+			}
+	</script>
+	</head>
+	<body>
+		<form name="form1">
+			<font size = "+4"><p style="color:black"><u><mark>Please enter the following details:</mark></u></p></font>
+			<h1><p style="color:black"><mark>Enter UPI ID:</mark><input type="text" style="height:30px;font-size:20pt;" name="upi" onblur="upi_onblur()" size="15" /></p>
+			<p style="color:black"><mark>Enter Passsword:</mark><input type="password" style="height:30px;font-size:20pt;" name="pw" onblur="pw_onblur()" size="8" maxlength="6" /></p>
+			<input type="button" class="button" value="OTP" name="btnCheckForm" onclick="otp_onclick()"/>
+			<p style="color:black"><mark>Enter OTP:</mark><input type="text" style="height:30px;font-size:20pt;" name="OTP" onblur="OTP_onblur()" size="8" maxlength="6" /></p>
+			<button class="button" onclick="btnCheckForm_onclick()">PAY</button></h1>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,116 @@
+<html>
+	<head>
+		<style>
+			* {
+				  box-sizing: border-box;
+			    }
+		
+			body {
+				 background-image: url("BG.jpg");
+				background-size: cover;
+				  background-color: #f1f1f1;
+				  padding: 20px;
+				  font-family: Arial;
+			}
+
+			.row {
+				  margin: 8px -16px;
+			}
+
+			/* Create four equal columns that floats next to each other */
+			.column {
+				  float: left;
+				  width: 15%;
+			}
+
+			/* Content */
+			.content {
+				  background-color: white;
+				  padding: 10px;
+			}
+			.button {
+				  padding: 15px 20px;
+				  font-size: 14px;
+				  text-align: center;
+				  cursor: pointer;
+				  color: #ffffff;
+				  background-color: #FF5733;
+				  border: none;
+				  border-radius: 15px;
+				  box-shadow: 0 9px #999;
+			}
+			.button:hover {
+				background-color: #3e8e41
+			}
+			mark { 
+				  background-color: white;
+				  color: black;
+			}			
+		</style>
+	</head>
+	<script>
+		function myButton_onclick()
+		{
+			window.open("ORDER.html");
+		}
+	</script>
+	<body>
+	
+	<div class="main">
+	         <font size = "+4"><b><mark>**NOODLES**</mark></b></font><br><br>
+		<div class="row">
+			  <div class="column">
+				    <div class="content">
+					      <img src="veg Hakka Noodles.jpg" style="width:100%">
+					      <h3>Veg Hakka Noodles</h3>
+					      <p>Hakka noodles is a Chinese preparation where boiled noodles are stir fried with sauce and vegetables. A hakka noodle is made from unleaved dough.</p><h2>₹180                            
+					 <button class="button" onclick="myButton_onclick()">ORDER</button>      
+				    </div>
+			 </div>
+
+			<div class="column">
+				 <div class="content">
+					 <img src="Chicken Hakka Noodles.jpg" style="width:100%">
+					<h3>Chicken Hakka Noodles</h3>
+					<p>A Delicious hakka noodles topped with FRESH CHICKEN seasioning with spices, sauces and garnished with spring onion and garlic.</p><h2>₹200
+					<button class="button" onclick="myButton_onclick()">ORDER</button>      
+				</div>
+			 </div>
+
+			<div class="column">
+				<div class="content">
+					<img src="Veg Schezwan Noodles.jpg" alt="Nature" style="width:100%">
+					<h3>Veg Schezwan Noodles</h3>
+					<p>Szechwan noodles is a spicy stir-fried noodles from Sichuan which uses doubanjiang chilli sauce with garlic, green onions, and red onion. It is a spicy dish.</p><h2>₹260
+					<button class="button" onclick="myButton_onclick()">ORDER</button>      
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="content">
+					<img src="Chicken Schezwan Noodles.jpg" alt="Mountains" style="width:100%">
+					<h3>Chicken schezwan Noodles</h3>
+					<p>Chicken schezwan Noodles has bold flavours, particularly the pungency and spiciness of garlic and chilli peppers. It is a spicy dish.</p><h2>₹280
+					<button class="button" onclick="myButton_onclick()">ORDER</button>      
+				</div>
+			</div>
+			 <div class="column">
+				    <div class="content">
+					      <img src="Veg Manchurian Noodles.jpg" style="width:100%">
+					      <h3>Veg Manchurian Noodles</h3>
+					      <p>Veg Manchurian is a class of Indo-chinese dishes made by deep-frying ingredient such as chicken, paneer, and flavored with soy sauce.</p><h2>₹290
+					      <button class="button" onclick="myButton_onclick()">ORDER</button>      
+				    </div>
+			 </div>
+			 <div class="column">
+				    <div class="content">
+					      <img src="Veg Stewed Noodles.jpg" style="width:100%">
+					      <h3>Veg Stewed Noodles</h3>
+					      <p>Veg Stewed Noodles is a flavour combined of veggies cooked with noodles in a tangy and wholesome sauce of vegetable stock and soya sauce.</p><h2>₹300
+					      <button class="button" onclick="myButton_onclick()">ORDER</button>      
+				    </div>
+			 </div>
+		</div>
+	</div>
+</body>
+</html>

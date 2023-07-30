@@ -1,0 +1,113 @@
+<html>
+	<head>
+		<style>
+			* {
+				  box-sizing: border-box;
+			    }
+		
+			body {
+				 background-image: url("BG.jpg");
+				background-size: cover;
+				  background-color: #f1f1f1;
+				  padding: 20px;
+				  font-family: Arial;
+			}
+
+			.row {
+				  margin: 8px -16px;
+			}
+
+			/* Create four equal columns that floats next to each other */
+			.column {
+				  float: left;
+				  width: 15%;
+			}
+
+			/* Content */
+			.content {
+				  background-color: white;
+				  padding: 10px;
+			}
+			.button {
+				  padding: 15px 20px;
+				  font-size: 14px;
+				  text-align: center;
+				  cursor: pointer;
+				  color: #ffffff;
+				  background-color: #FF5733;
+				  border: none;
+				  border-radius: 15px;
+				  box-shadow: 0 9px #999;
+			}
+			.button:hover {
+				background-color: #3e8e41
+			}
+			mark { 
+				  background-color: white;
+				  color: black;
+			}
+		</style>
+	</head>
+	<script>
+		function myButton_onclick()
+		{
+			window.open("ORDER.html");
+		}
+	</script>
+	<body>	
+	<div class="main">
+	          <font size = "+4"><b><mark>**SOUPS**</mark></b></font><br><br>
+		<div class="row">
+			  <div class="column">
+				    <div class="content">
+					      <img src="VegClearSoup.jpeg" style="width:100%">
+					      <h3>Vegetable Clear Soup</h3>
+					      <p>Vegetable Clear Soup is a comforting and light soup prepared with carrots, beans, button mushrooms, onions topped with spring onions.</p><h2>₹190                            
+					 <button class="button" onclick="myButton_onclick()">ORDER</button>      
+
+				    </div>
+			 </div>
+
+			<div class="column">
+				 <div class="content">
+					 <img src="VegGarlicSoup.jpg" style="width:100%">
+					<h3>Veg Garlic Burnt Soup</h3>
+					<p>Veg Garlic Burnt Soup has this amazing blend of a all the vegetable like broccoli and the life changing flavours of olive oil, garlic, onions, etc.</p><h2>₹190
+					<button class="button" onclick="myButton_onclick()">ORDER</button>      
+
+				</div>
+			 </div>
+
+			<div class="column">
+				<div class="content">
+					<img src="VegManchowSoup.jpg" alt="Nature" style="width:100%">
+					<h3>Veg Manchow Soup</h3>
+					<p>Veg Manchow Soup made with mixed veggies,garlic,ginger, soya sauce & a few other ingredients.This is served with crispy fried noodles.</p><h2>₹195
+					<button class="button" onclick="myButton_onclick()">ORDER</button>      
+
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="content">
+					<img src="VegHotSourSoup.jpg" alt="Mountains" style="width:100%">
+					<h3>Veg Hot and Sour Soup</h3>
+					<p>Veg Hot and sour soup is a flavorful dish with lots of fresh veggies and vibrant spices. It’s a spicy, sour & hot soup & that’s popular in Indo-Chinese Cuisine.</p><h2>₹195
+					<button class="button" onclick="myButton_onclick()">ORDER</button>      
+
+				</div>
+			</div>
+			 <div class="column">
+				    <div class="content">
+					      <img src="VegSweetCornSoup.jpg" style="width:100%">
+					      <h3>Vegetable Sweet Corn Soup</h3>
+					      <p>Vegetable Sweet Corn Soup consists of veggies like green peas, carrots make it more nutritious. It’s very lightly spiced and also a little bit Sweet.</p><h2>₹195
+					      <button class="button" onclick="myButton_onclick()">ORDER</button>      
+
+				    </div>
+			 </div>
+		</div>
+	</div>
+
+</body>
+</html>

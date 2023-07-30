@@ -1,0 +1,110 @@
+<html>
+	<head>
+		<style>
+			* {
+				  box-sizing: border-box;
+			    }
+		
+			body {
+				 background-image: url("BG.jpg");
+				 background-size: cover;
+				 padding: 20px;
+				 font-family: Arial;
+			}
+
+			.row {
+				  margin: 8px -16px;
+			}
+
+			/* Create four equal columns that floats next to each other */
+			.column {
+				  float: left;
+				  width: 15%;
+			}
+
+			/* Content */
+			.content {
+				  background-color: white;
+				  padding: 10px;
+			}
+			.button {
+				  padding: 15px 20px;
+				  font-size: 14px;
+				  text-align: center;
+				  cursor: pointer;
+				  color: #ffffff;
+				  background-color: #FF5733;
+				  border: none;
+				  border-radius: 15px;
+				  box-shadow: 0 9px #999;
+			}
+			.button:hover {
+				background-color: #3e8e41
+			}
+			mark { 
+				  background-color: white;
+				  color: black;
+			}			
+		</style>
+	</head>
+	<script>
+		function myButton_onclick()
+		{
+			window.open("ORDER.html");
+		}
+	</script>
+	<body>
+	
+	<div class="main">
+	         <font size = "+4"><b><mark>**BURGERS**</mark></b></font><br><br>
+		<div class="row">
+			  <div class="column">
+				    <div class="content">
+					      <img src="Aloo Tikki Burger.jpg" style="width:100%">
+					      <h3>Aloo Tikki Burger</h3>
+					      <p>The world's favorite Indian burger! Crunchy potato and peas patty topped with veg sauce, ketchup, tomatoes and onions.</p><h2>₹105                           
+					 <button class="button" onclick="myButton_onclick()">ORDER</button>      
+				    </div>
+			 </div>
+
+			<div class="column">
+				 <div class="content">
+					 <img src="Chicken Burger.jpg" style="width:100%">
+					<h3>Chicken Burger</h3>
+					<p>Tender and juicy chicken patty coated in spicy, crispy batter topped with a creamy sauce and crispy shredded lettuce.</p><h2>₹140
+					<button class="button" onclick="myButton_onclick()">ORDER</button>      
+
+				</div>
+			 </div>
+
+			<div class="column">
+				<div class="content">
+					<img src="Zinger Burger.jpg" style="width:100%">
+					<h3>Zinger Burger</h3>
+					<p>Signature chicken burger made with a crunchy chicken fillet patty, veggies & a delicious mayonnaise sauce.</p><h2>₹150
+					<button class="button" onclick="myButton_onclick()">ORDER</button>      
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="content">
+					<img src="Paneer Burger.jpg" style="width:100%">
+					<h3>Paneer Burger</h3>
+					<p>Cottage cheese patty coated in spicy, crispy batter topped with a creamy sauce and crispy shredded lettuce.</p><h2>₹180
+					<button class="button" onclick="myButton_onclick()">ORDER</button>      
+
+				</div>
+			</div>
+			 <div class="column">
+				    <div class="content">
+					      <img src="Mexico Burger.jpg" style="width:100%">
+					      <h3>Mexican Burger</h3>
+					      <p>A fusion of international taste combined with a patty mostly aloo tikki, layered with onion, jalapeno, served with Chipotle sauce.</p><h2>₹115
+					      <button class="button" onclick="myButton_onclick()">ORDER</button>      
+
+				    </div>
+			 </div>
+		</div>
+	</div>
+</body>
+</html>

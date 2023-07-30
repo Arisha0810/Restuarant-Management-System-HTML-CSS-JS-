@@ -1,0 +1,120 @@
+<html>
+	<head>
+		<style>
+			* {
+				  box-sizing: border-box;
+			    }
+		
+			body {
+				 background-image: url("BG.jpg");
+				background-size: cover;
+				  background-color: #f1f1f1;
+				  padding: 20px;
+				  font-family: Arial;
+			}
+
+			.row {
+				  margin: 8px -16px;
+			}
+
+			/* Create four equal columns that floats next to each other */
+			.column {
+				  float: left;
+				  width: 15%;
+			}
+
+			/* Content */
+			.content {
+				  background-color: white;
+				  padding: 10px;
+			}
+			.button {
+				  padding: 15px 20px;
+				  font-size: 14px;
+				  text-align: center;
+				  cursor: pointer;
+				  color: #ffffff;
+				  background-color: #FF5733;
+				  border: none;
+				  border-radius: 15px;
+				  box-shadow: 0 9px #999;
+			}
+			.button:hover {
+				background-color: #3e8e41
+			}
+			mark { 
+				  background-color: white;
+				  color: black;
+			}			
+		</style>
+	</head>
+	<script>
+		function myButton_onclick()
+		{
+			window.open("ORDER.html");
+		}
+	</script>
+	<body>
+	
+	<div class="main">
+	         <font size = "+4"><b><mark>**BEVERAGES**</mark></b></font><br><br>
+		<div class="row">
+			  <div class="column">
+				    <div class="content">
+					      <img src="coffee.jpg" style="width:100%">
+					      <h3>Coffee</h3>
+					      <p>Experience the taste of authentic filter coffee at ever sip.</p><h2>₹70                          
+					 <button class="button" onclick="myButton_onclick()">ORDER</button>      
+				    </div>
+			 </div>
+
+			<div class="column">
+				 <div class="content">
+					 <img src="cappuccino.jpg" style="width:100%">
+					<h3>Cappuccino</h3>
+					<p>Espresso with equal parts hot milk and steamed micro foam.</p><h2>₹120
+					<button class="button" onclick="myButton_onclick()">ORDER</button>      
+
+				</div>
+			 </div>
+
+			<div class="column">
+				<div class="content">
+					<img src="Lemon mojito.jpg" alt="Nature" style="width:100%">
+					<h3>Mojito</h3>
+					<p>Mojito is a refreshing cocktail that contains Lemon and mint.</p><h2>₹80
+					<button class="button" onclick="myButton_onclick()">ORDER</button>      
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="content">
+					<img src="Orange Mojito.jpg" alt="Mountains" style="width:100%">
+					<h3>Orange Mojito</h3>
+					<p>Mojito is a refreshing cocktail that contains Orange and mint.</p><h2>₹120
+					<button class="button" onclick="myButton_onclick()">ORDER</button>      
+
+				</div>
+			</div>
+			 <div class="column">
+				    <div class="content">
+					      <img src="strawberry juice.jpg" style="width:100%">
+					      <h3>Strawberry Juice</h3>
+					      <p>Strawberry Juice is a refreshing fresh fruit juice.</p><h2>₹140
+					      <button class="button" onclick="myButton_onclick()">ORDER</button>      
+
+				    </div>
+			 </div>
+			 <div class="column">
+				    <div class="content">
+					      <img src="Mango Juice.jpg" style="width:100%">
+					      <h3>Mango Juice</h3>
+					      <p>This mango juice is slightly sweet, slightly tangy.</p><h2>₹150
+					      <button class="button" onclick="myButton_onclick()">ORDER</button>      
+
+				    </div>
+			 </div>
+		</div>
+	</div>
+</body>
+</html>

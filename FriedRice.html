@@ -1,0 +1,120 @@
+<html>
+	<head>
+		<style>
+			* {
+				  box-sizing: border-box;
+			    }
+		
+			body {
+				 background-image: url("BG.jpg");
+				background-size: cover;
+				  background-color: #f1f1f1;
+				  padding: 20px;
+				  font-family: Arial;
+			}
+
+			.row {
+				  margin: 8px -16px;
+			}
+
+			/* Create four equal columns that floats next to each other */
+			.column {
+				  float: left;
+				  width: 15%;
+			}
+
+			/* Content */
+			.content {
+				  background-color: white;
+				  padding: 10px;
+			}
+			.button {
+				  padding: 15px 20px;
+				  font-size: 14px;
+				  text-align: center;
+				  cursor: pointer;
+				  color: #ffffff;
+				  background-color: #FF5733;
+				  border: none;
+				  border-radius: 15px;
+				  box-shadow: 0 9px #999;
+			}
+			.button:hover {
+				background-color: #3e8e41
+			}
+			mark { 
+				  background-color: white;
+				  color: black;
+			}			
+		</style>
+	</head>
+	<script>
+		function myButton_onclick()
+		{
+			window.open("ORDER.html");
+		}
+	</script>
+	<body>
+	
+	<div class="main">
+	         <font size = "+4"><b><mark>**FRIED RICE**</mark></b></font><br><br>
+		<div class="row">
+			  <div class="column">
+				    <div class="content">
+					      <img src="VFriedRice.jpg" style="width:100%">
+					      <h3>Veg Fried Rice</h3>
+					      <p>Fried rice is a dish of cooked rice that has been stir-fried in a wok or a frying pan and is usually mixed with other ingredients such as eggs, vegetables, seafood, or meat.</p><h2>₹250                            
+					 <button class="button" onclick="myButton_onclick()">ORDER</button>      
+				    </div>
+			 </div>
+
+			<div class="column">
+				 <div class="content">
+					 <img src="CFriedRice.jpg" style="width:100%">
+					<h3>Chicken Fried Rice</h3>
+					<p>chicken rice is a dish of chicken and seasoned rice, served with chilli sauce and usually with cucumber garnishes.It is one of the national dishes of Singapore.</p><h2>₹270
+					<button class="button" onclick="myButton_onclick()">ORDER</button>      
+
+				</div>
+			 </div>
+
+			<div class="column">
+				<div class="content">
+					<img src="Veg Schezwan Fried Rice.jpg" alt="Nature" style="width:100%">
+					<h3>Veg Schezwan Fried Rice</h3>
+					<p>Szechwan fried rice is a spicy stir-fried rice from Sichuan which uses doubanjiang chili sauce with garlic, green onions, and red onion. It is a spicy dish.</p><h2>₹260
+					<button class="button" onclick="myButton_onclick()">ORDER</button>      
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="content">
+					<img src="Chicken Schezwan Fried Rice.jpg" alt="Mountains" style="width:100%">
+					<h3>chicken schezwan fried Rice</h3>
+					<p>Chicken schezwan Fried Rice has bold flavours, particularly the pungency and spiciness of garlic and chili peppers. It is a spicy dish.</p><h2>₹280
+					<button class="button" onclick="myButton_onclick()">ORDER</button>      
+
+				</div>
+			</div>
+			 <div class="column">
+				    <div class="content">
+					      <img src="Veg Triple Schezwan Fried Rice.jpg" style="width:100%">
+					      <h3>Veg Triple Fried Rice</h3>
+					      <p>Veg Triple Fried Rice is a Indo-Chinese dish and is a combination of noodles and rice made with vegetables in spicy sauce and served with shezwan gravy.</p><h2>₹290
+					      <button class="button" onclick="myButton_onclick()">ORDER</button>      
+
+				    </div>
+			 </div>
+			 <div class="column">
+				    <div class="content">
+					      <img src="Chicken Triple Schezwan Fried Rice.jpg" style="width:100%">
+					      <h3>Chicken Triple Fried Rice</h3>
+					      <p>Chicken Triple Fried Rice .... The word “triple” is used as this recipe uses three main ingredients- rice, noodles and gravy is chicken gravy.</p><h2>₹300
+					      <button class="button" onclick="myButton_onclick()">ORDER</button>      
+
+				    </div>
+			 </div>
+		</div>
+	</div>
+</body>
+</html>

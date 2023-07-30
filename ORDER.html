@@ -1,0 +1,103 @@
+<html>
+	<head>
+		<title>Details</title>
+		<style>
+			body {
+				 background-image: url("order.jpg");
+				 background-size: cover;
+				 padding: 20px;
+				 font-family: Arial;
+			}
+			.button {
+				  padding: 15px 20px;
+				  font-size: 15px;
+				  text-align: center;
+				  cursor: pointer;
+				  color: #ffffff;
+				  background-color: #FF5733;
+				  border: none;
+				  border-radius: 15px;
+				  box-shadow: 0 11px #999;
+			}
+			.button:hover {
+				background-color: #3e8e41
+			}
+		</style>
+	<script>
+
+	function btnCheckForm_onclick()
+	{
+		var myForm = document.form1;
+		if(myForm.txtName.value == "" || myForm.txtPh.value == "" || myForm.email.value == "" || myForm.myTextArea.value == "" || myForm.txtCity.value == "" || myForm.txtPinCode.value == "")
+		{ 
+			alert("Please complete all the form");
+		}
+		else
+		{
+			
+			window.open("payment.html");
+		}
+	}
+
+	function txtName_onblur() 
+		{
+			var txtName = document.form1.txtName.value;
+			var b = /^[a-z A-Z]{1,}$/;
+			if(b.test(txtName)==false) 
+			{
+				alert("Please enter a valid Name");
+			} 
+		} 
+	
+	function txtPh_onblur()
+	{	var txtPh = document.form1.txtPh.value;
+		var a = /^[0-9]{10}$/;
+		if(a.test(txtPh)==false) 
+		{ 
+			alert("Please enter a valid Phone Number");
+		} 
+	}
+
+	function txtCity_onblur() 
+		{
+			var txtCity = document.form1.txtCity.value;
+			var c = /^[a-z A-Z]{1,}$/;
+			if(c.test(txtCity)==false) 
+			{
+				alert("Please enter a valid City");
+			} 
+		} 
+
+	function txtPinCode_onblur()
+	{	var txtPinCode = document.form1.txtPinCode.value;
+		var d = /^[0-9]{6}$/;
+		if(d.test(txtPinCode)==false) 
+		{ 
+			alert("Please enter a valid Pin Code");
+		} 
+	}
+
+	function validateEmail() 
+	{
+		var a=document.form1.email.value;		
+ 		if(a.indexOf('@') == -1 || a.indexOf('.com') == -1) 
+		{
+			  alert("Please Enter a Valid Email ID");
+		 }
+	}
+	
+	</script>
+	</head>
+	<body>
+		<form name="form1">
+			<font size = "+2"><p style="color:white"><u>Please enter the following details:</u></p></font>
+			<h4><p style="color:white">Name:<input type="text" name="txtName" onblur="txtName_onblur()" size="15" /></p>
+			<p style="color:white">Phone Number:<input type="text" name="txtPh" onblur="txtPh_onblur()" size="15" maxlength="10" /></p>
+			<p style="color:white">Email-ID:<input type="text" name="email" onblur="validateEmail()"/></p>
+			<p style="color:white">Address: <textarea name="myTextArea" cols="20" rows="3"></textarea>
+			<p style="color:white">City:<input type="text" name="txtCity" onblur="txtCity_onblur()" /></p>
+			<p style="color:white">Pin-Code:<input type="text" name="txtPinCode" onblur="txtPinCode_onblur()" size="8" maxlength="6"/></p>
+			<input type="button" class="button" value="PROCEED" onclick="btnCheckForm_onclick()"/></h4> 
+		</form>
+	</body>
+</html>
